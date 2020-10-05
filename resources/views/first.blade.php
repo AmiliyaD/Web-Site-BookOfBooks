@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <a href="first">click</a>
-    <h1>Hello world</h1>
+    <h2>first</h2>
 </body>
 </html>
