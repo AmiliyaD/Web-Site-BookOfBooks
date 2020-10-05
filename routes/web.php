@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('new');
-});
-Route::get('first', function () {
     return view('first');
 });
+// Route::get('first', function () {
+//     return view('first');
+// });

@@ -9,15 +9,24 @@
 </head>
 <body>
    <div class="container">
+       {{-- header --}}
 <div class="row">
     <div class="col-12">
-
-
-
+@include('blocks.header')
     </div>
 
 </div>       
 
+
+{{-- footer --}}
+<div class="row">
+
+
+    <div class="col-12">
+
+        @include('blocks.footer')
+    </div>
+</div>
 </div> 
 </body>
 </html>
