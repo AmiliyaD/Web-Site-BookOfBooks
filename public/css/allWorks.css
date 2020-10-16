@@ -1,0 +1,24 @@
+.allHeadr {
+    margin-top: 150px;
+}
+.r {
+    margin-top: 120px;
+}
+.r input {
+    height: 40px;
+    border: 3px solid #C4C4C4;
+box-sizing: border-box;
+border-radius: 40px;
+}
+.r button {
+border: none;
+height: 56px;
+background: #FF008A;
+border-radius: 50px;
+margin-top: 30px;
+}
+
+.r h2 {
+ margin-bottom: 50px;
+}
+

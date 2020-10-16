@@ -1,9 +1,36 @@
-@extends('main.main')
 
-@section('here-main')
-    <div class="row">
-        <div class="col-4">First</div>
-        <div class="col-4">Second</div>
-        <div class="col-4">Third</div>
+<link rel="stylesheet" href="{{ asset('css/allWorks.css')}}">
+@extends('main.main')
+@section('title')
+    Все авторы
+@endsection
+{{-- main allWorks --}}
+@section('main-block')
+{{-- header --}}
+    <div class="row allHeadr  align-middle">
+        <div class="col-6">
+        <img src="{{ asset('img/Рисунок.png') }}" alt="">
+        </div>
+        <div class="col-md-5 col-sm-12 col-12 align-baseline ">
+            <div class="r d-flex flex-column">
+            <h2 class="text-center">Все авторы</h2>
+            <input type="text" name="" id="" class="form-control">
+           
+            <button class="btn btn-success">Найти</button>
+        </div>
+        </div>
+    </div>
+    {{-- header --}}
+
+    {{-- autors --}}
+    <div class="row autors">
+        <div class="col-6 d-inline">
+        <img src="{{ asset('img/av.png') }}" alt="" class="d-inline">
+            <p>Имя Фамилия</p>
+        </div>
+        <div class="col-6">
+            <img src="{{ asset('img/av.png') }}" alt="" class="d-inline">
+                <p>Имя Фамилия</p>
+            </div>
     </div>
 @endsection

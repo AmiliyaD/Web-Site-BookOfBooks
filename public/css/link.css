@@ -1,0 +1,31 @@
+.nav-link {
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    
+    /* identical to box height */
+    
+    color: #000000;
+    
+    
+    }
+
+    
+.navbar-brand {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.nb {
+    margin-top: 40px;
+}
+.autors {
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
