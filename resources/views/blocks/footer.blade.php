@@ -12,7 +12,7 @@
           <a class="nav-link" href="{{ route('main') }}">Главная <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-          <a class="nav-link" href="{{ route('allWorks') }}">Все работы</a>
+          <a class="nav-link" href="{{ route('allAutors') }}">Все работы</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#">Все авторы</a>

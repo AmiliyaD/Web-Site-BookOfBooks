@@ -8,16 +8,16 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="headerU navbar-nav mr-auto  center">
         <li class="nav-item active">
-        <a class="nav-link as" href="{{ route('main') }}">Главная <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="{{ route('main') }}">Главная <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Все работы</a>
+        <a class="nav-link" href="{{ route('allWorks') }}">Все работы</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="{{ route('add') }}">Добавить работу</a>
           </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('allWorks') }}">Все авторы</a>
+            <a class="nav-link" href="{{ route('allAutors') }}">Все авторы</a>
           </li>
           <li class="nav-item">
           <a class="nav-link" href="{{ route('search') }}">Поиск</a>
@@ -30,7 +30,7 @@
         </li>
         <span>|</span>
         <li class="nav-item active">
-        <a class="nav-link" href="{{ route('reg') }}">Регистрация <span class="sr-only">(current)</span></a>
+        <a class="nav-link as" href="{{ route('reg') }}">Регистрация <span class="sr-only">(current)</span></a>
           </li>
          
         

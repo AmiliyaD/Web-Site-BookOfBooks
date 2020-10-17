@@ -15,7 +15,7 @@
             <h1 class="f">Подари свой мир!</h1>
             <p class="hp">и может, он кому-то понравится</p>
 
-            <a href='{{ route('allWorks')}}'> <button class="sds"> Добавить работу</button></a>
+            <a href='{{ route('allAutors')}}'> <button class="sds"> Добавить работу</button></a>
         </div>
 
     </div>
@@ -81,7 +81,7 @@
     {{-- button --}}
     <div class="row bit">
         <div class="col-md-4 offset-md-4">
-         <a href="{{ route('allWorks') }}"> <button class="sds">Перейти ко всем работам</button></a>  
+         <a href="{{ route('allAutors') }}"> <button class="sds">Перейти ко всем работам</button></a>  
         </div>
     </div>
 

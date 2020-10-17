@@ -40,3 +40,23 @@ color: #000000;
 
 }
 
+.works-all {
+    font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+text-decoration-line: underline;
+
+color: #FF008A;
+margin-top: 40px;
+}
+.first-bor {
+    padding-top: 50px;
+    padding-bottom: 50px;
+margin-top: 210px;
+margin-bottom: 30px;
+background: #FFFFFF;
+border: 3px solid #ABABAB;
+box-sizing: border-box;
+border-radius: 50px;
+}

@@ -6,12 +6,9 @@ use Illuminate\Http\Request;
 use App\Models\history2;
 class MainController extends Controller
 {
-    public function main(){
-        return view('first');
-    }
 
-    public function allWorks(){
-        return view('allWorks');
+    public function allAutors(){
+        return view('allAutors');
     }
     public function search(){
         return view('search');
@@ -24,6 +21,11 @@ class MainController extends Controller
     }
     public function enter() {
         return view('registration.enter');
+      }
+
+      public function allWorks() {
+          $get = DB::select('select * from history2');
+          return view('allWorks', ['get' =>$get]);
       }
   
     public function get(){
