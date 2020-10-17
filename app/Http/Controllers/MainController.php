@@ -14,7 +14,7 @@ class MainController extends Controller
         return view('allWorks');
     }
     public function search(){
-        return view('new');
+        return view('search');
     }
     public function add(){
         return view('addWorks');

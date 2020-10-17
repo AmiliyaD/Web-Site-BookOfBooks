@@ -5,10 +5,18 @@
     margin-top: 120px;
 }
 .r input {
-    height: 40px;
-    border: 3px solid #C4C4C4;
+    width: 100%;
+    height: 60.83px;
+border: 3px solid#C4C4C4;
 box-sizing: border-box;
 border-radius: 40px;
+padding-left: 40px;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 22px;
+
+color: gray;
 }
 .r button {
 border: none;
@@ -20,5 +28,15 @@ margin-top: 30px;
 
 .r h2 {
  margin-bottom: 50px;
+ font-style: normal;
+font-weight: bold;
+font-size: 54px;
+line-height: 66px;
+
+/* identical to box height */
+
+color: #000000;
+
+
 }
 
