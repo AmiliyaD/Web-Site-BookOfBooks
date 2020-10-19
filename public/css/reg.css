@@ -20,7 +20,7 @@
 
 }
 
-.f-reg input {
+.sd111 input {
     padding-left: 30px;
     /* width: 85%; */
 
@@ -38,7 +38,7 @@
     margin-top: 30px;
 }
 
-.f-reg button {
+.f-reg-button {
     border: none;
     font-style: normal;
     font-weight: bold;

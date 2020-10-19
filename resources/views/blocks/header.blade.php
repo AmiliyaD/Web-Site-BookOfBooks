@@ -1,5 +1,7 @@
+@extends('layouts.app')
+@section('content')
 <nav class="navbar nb navbar-expand-lg">
-    
+  
 <img src="{{ asset('img/logo.png') }}" alt=""><a class="navbar-brand" href="#">BookOfBooks</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -37,3 +39,4 @@
       </ul>
     </div>
   </nav>
+  @endsection

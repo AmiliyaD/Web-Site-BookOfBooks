@@ -17,10 +17,10 @@ class MainController extends Controller
         return view('addWorks');
     }
     public function reg() {
-      return view('registration.reg');
+      return view('auth.reg');
     }
     public function enter() {
-        return view('registration.enter');
+        return view('auth.login');
       }
 
       public function allWorks() {

@@ -16,6 +16,6 @@
             <input type="text" class="form-control" placeholder="Пароль">
             <button>Войти</button>
         </form>
-        <p class='text-center'><a href="" class=' f-reg-p'> Еще нет аккаунта? Зарегистрируйтесь</a> </p>
+        <p class='text-center'><a href="{{ route('reg') }}" class=' f-reg-p'> Еще нет аккаунта? Зарегистрируйтесь</a> </p>
     </div>
 @endsection

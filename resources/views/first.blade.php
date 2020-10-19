@@ -28,7 +28,7 @@
             <div class="row first-stories">
                 {{-- первая строка --}}
 <div class="col-md-6 offset-1 border">
-    <h2>{{ $g->title }}</h2>
+<h2><a href="allWorks?id={{$g->id }}">{{ $g->title }}</a>  </h2>
     
 </div>
 <div class="col-1">

@@ -21,3 +21,6 @@ Route::get('/reg', [MainController::class, 'reg'])->name('reg');
 Route::get('/add', [MainController::class, 'add'])->name('add');
 Route::get('/enter', [MainController::class, 'enter'])->name('enter');
 Route::get('/allWorks', [MainController::class, 'allWorks'])->name('allWorks');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
