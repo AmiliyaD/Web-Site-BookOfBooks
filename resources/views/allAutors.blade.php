@@ -24,21 +24,13 @@
 
     {{-- autors --}}
     <div class="row autors">
+        @foreach ($autors as $a)
         <div class="col-6 d-inline">
-        <img src="{{ asset('img/av.png') }}" alt="" class="d-inline">
-            <p>Имя Фамилия</p>
-        </div>
-        <div class="col-6">
             <img src="{{ asset('img/av.png') }}" alt="" class="d-inline">
-                <p>Имя Фамилия</p>
+            <a href=""><p>{{ $a->name }}</p></a>
+ 
             </div>
-            <div class="col-6 d-inline">
-                <img src="{{ asset('img/av.png') }}" alt="" class="d-inline">
-                    <p>Имя Фамилия</p>
-                </div>
-                <div class="col-6">
-                    <img src="{{ asset('img/av.png') }}" alt="" class="d-inline">
-                        <p>Имя Фамилия</p>
-                    </div>
+        @endforeach
+    
     </div>
 @endsection

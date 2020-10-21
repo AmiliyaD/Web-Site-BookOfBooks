@@ -1,37 +1,19 @@
 @extends('main.main')
 @section('main-block')
-<div class="row allHeadr  align-middle">
-    <div class="col-6">
-    <img src="{{ asset('img/Рисунок.png') }}" class='img-fluid'  alt="">
-    </div>
-    <div class="col-md-5 col-sm-12 col-12 align-baseline ">
-        <div class="r d-flex flex-column">
-        <h2 class="text-center">Все авторы</h2>
-        <input type="text" name="" id="" class="inc" placeholder="Введите имя автора">
-       
-        <button class="btn btn-success">Найти</button>
-    </div>
+
+@if (Auth::check())
+<div class="row">
+    <div class="col-8 offset-2">
+        <img src="{{ asset('img/r.svg') }}" alt="" class="img-fluid text-center">
+        <h1 class="text-center">Добавление работы</h1>
+        <p>Вы зарегистрированы</p>
     </div>
 </div>
+
+@else
+    <p>Вы не зарегистрированы</p>
+@endif
 {{-- header --}}
 
-{{-- autors --}}
-<div class="row autors">
-    <div class="col-6 d-inline">
-    <img src="{{ asset('img/av.png') }}" alt="" class="img-fluid d-inline">
-        <p>Имя Фамилия</p>
-    </div>
-    <div class="col-6">
-        <img src="{{ asset('img/av.png') }}" alt="" class="d-inline">
-            <p>Имя Фамилия</p>
-        </div>
-        <div class="col-6 d-inline">
-            <img src="{{ asset('img/av.png') }}" alt="" class="d-inline">
-                <p>Имя Фамилия</p>
-            </div>
-            <div class="col-6">
-                <img src="{{ asset('img/av.png') }}" alt="" class="d-inline">
-                    <p>Имя Фамилия</p>
-                </div>
-</div>
+
 @endsection

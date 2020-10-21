@@ -3,19 +3,20 @@ body {
 }
 
 .se-0 {
-  width: 100%;
+    width: 100%;
     height: 60.83px;
-border: 3px solid #C4C4C4;
-box-sizing: border-box;
-border-radius: 40px;
-padding-left: 40px;
-font-style: normal;
-font-weight: normal;
-font-size: 18px;
-line-height: 22px;
+    border: 3px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 40px;
+    padding-left: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
 
-color: #C4C4C4;
+    color: #C4C4C4;
 }
+
 .search-1 {
     margin-top: 150px;
     margin-bottom: 30px;
@@ -44,6 +45,28 @@ color: #C4C4C4;
     color: #1AC23F;
 
 
+}
+
+.date-in {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #C4C4C4;
+
+    margin-right: 35px;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #C4C4C4;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.date-in:focus {
+    outline: none;
 }
 
 .se-2-b {
@@ -111,31 +134,34 @@ color: #C4C4C4;
 
     color: #FF2C2C;
 }
+
 .se-2-ph {
     font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 18px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
 
-color: #521392;
+    color: #521392;
 
 
-border: 1px solid #521392;
-box-sizing: border-box;
-border-radius: 25px;
+    border: 1px solid #521392;
+    box-sizing: border-box;
+    border-radius: 25px;
 }
+
 .se-2-y {
     font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 18px;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
 
-color: #DFD261;
+    color: #DFD261;
 
-border: 1px solid #DACB4A;
-box-sizing: border-box;
-border-radius: 25px;
+    border: 1px solid #DACB4A;
+    box-sizing: border-box;
+    border-radius: 25px;
 }
+
 .or {
     border: 1px solid #FFA41C;
     font-style: normal;
@@ -210,14 +236,15 @@ border-radius: 25px;
 .in {
     border: none;
 }
+
 .se-4-d {
     border: 1px solid #C4C4C4;
-box-sizing: border-box;
-border-radius: 25px;
-font-style: normal;
-font-weight: normal;
-font-size: 15px;
-line-height: 18px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
 
-color: #C4C4C4;
+    color: #C4C4C4;
 }

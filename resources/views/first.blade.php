@@ -24,34 +24,42 @@
         <h2 class="b">Новинки</h2>
         <div class="w-100"></div>
         @foreach ($get as $g)
-        <div class="col-md-10  first-bor">
+        <div class="col-md-12  first-bor">
             <div class="row first-stories">
-                {{-- первая строка --}}
-<div class="col-md-6 offset-1 border">
-<h2><a href="allWorks?id={{$g->id }}">{{ $g->title }}</a>  </h2>
     
-</div>
-<div class="col-1">
-    234
-</div>
-<div class="col-1">
-    234
-</div>
-<div class="col-2">
-    Детектив
-</div>
-<div class="col-2 offset-1">
-<p>{{ $g->autor }}</p>
-</div>
-<div class="col-3 offset-1">
-<p>{{ $g->created}}</p>
-</div>
-{{-- вторая строка --}}
-<div class="col-md-10 offset-1">
-    <p>{{ $g->text }}</p>
-</div>
+                <div class="col-md-6 offset-1">
+                <h2 class="works-h2"><a href="{{ route('workText', ['id'=>$g->id]) }}">{{ $g->title }}</a></h2>
+    
+                </div>
+                
+                <div class="col-md-1 offset-xs-1">
+                    <img src="{{ asset('img/ы.png') }}" alt="">
+                <span>{{ $g->likes }}</span>
+                </div>
+                <div class="col-md-1  offset-xs-1">
+                    <img src="{{ asset('img/i2.png') }}" alt="">
+                    <span>123</span>
+                </div>
+                <div class="col-md-3">
+                <p class='work-genre work-detective text-center'>{{ $g->genre }}</p>
+                  
+                </div>
+    
+                <div class="col-2 offset-1">
+                    <p class="work-autor">{{ $g->autor }}</p>
+                </div>
+                <div class="col-3 offset-1">
+                    <p class="work-date">{{ $g->created}}</p>
+                </div>
+                <div class="col-4 work-process text-right">
+                <p>{{$g->status }}</p>
+                </div>
+                {{-- вторая строка --}}
+                <div class="col-md-10 offset-1">
+                    <p>{{ $g->text }}</p>
+                </div>
             </div>
-          
+    
         </div>
         @endforeach
 
@@ -62,16 +70,16 @@
     <div class="features">
         <div class="row">
 
-            <div class="col-md-4  col-12 text-center">
+            <div class="col-md-4 first-features col-12 text-center">
                 <img src="{{ asset('img/47.png') }}" alt="">
                 <p>Публикуй свои работы</p>
             </div>
-            <div class="col-md-4 col-12 text-center">
+            <div class="col-md-4 col-12 text-center first-features">
                 <img src="{{ asset('img/46.png') }}" alt="">
                 <p>Читай работы других
                     авторов</p>
             </div>
-            <div class="col-md-4 col-12 text-center">
+            <div class="col-md-4 col-12 text-center first-features">
                 <img src="{{ asset('img/48.png') }}" alt="">
                 <p>Поддерживай авторов и
                     оставляй комментарии</p>
@@ -80,7 +88,7 @@
     </div>
     {{-- button --}}
     <div class="row bit">
-        <div class="col-md-4 offset-md-4">
+        <div class="col-md-4 text-center offset-md-4">
          <a href="{{ route('allAutors') }}"> <button class="sds">Перейти ко всем работам</button></a>  
         </div>
     </div>

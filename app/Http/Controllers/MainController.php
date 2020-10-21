@@ -8,7 +8,8 @@ class MainController extends Controller
 {
 
     public function allAutors(){
-        return view('allAutors');
+        $getAutors = DB::select('select * from users');
+        return view('allAutors', ['autors' => $getAutors]);
     }
     public function search(){
         return view('search');
@@ -22,9 +23,19 @@ class MainController extends Controller
     public function enter() {
         return view('auth.login');
       }
+      public function getText() {
+        $user = DB::table('hisotry_text')->where('id', $_GET['id'])->get();
+        $user2 = DB::table('history2')->where('id', $_GET['id'])->get();
+      
+// выводим и текст и имя работы
+        return view('workText', ['text' => $user,
+                                'text2' => $user2
+        ]);
+      }
 
       public function allWorks() {
           $get = DB::select('select * from history2');
+        //   выводим основную инфу о работах
           return view('allWorks', ['get' =>$get]);
       }
   

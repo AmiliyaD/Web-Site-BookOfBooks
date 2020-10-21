@@ -58,14 +58,6 @@ footer {
 }
 
 
-.text-center p {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 29px;
-
-    color: #000000;
-}
 
 .features {
     margin-top: 170px;
@@ -93,4 +85,81 @@ footer {
 
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.first-bor span {
+    font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 20px;
+
+/* identical to box height */
+
+color: #000000;
+
+
+}
+.works-h2 {
+    font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 44px;
+text-decoration-line: underline;
+
+color: #000000;
+}
+.work-genre {
+    width: 156.94px;
+height: 36.5px;
+
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+
+color: #7A7A7A;
+padding-top: 7px;
+
+background: #F2F2F2;
+border-radius: 20px;
+}
+.work-autor {
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+margin-top: 10px;
+/* identical to box height */
+
+color: #616161;
+
+
+}
+.work-date {
+    margin-top: 10px;
+    font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+
+/* identical to box height */
+
+color: #A4A4A4;
+}
+.work-process {
+    font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 20px;
+
+/* identical to box height */
+
+color: #1AC23F;
+}
+.first-features p {
+    font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #000000;
 }
