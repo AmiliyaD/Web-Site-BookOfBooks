@@ -16,11 +16,12 @@ class History2 extends Migration
         //
         Schema::create('history2', function (Blueprint $table) {
             $table->string('autor');
+            $table->increments('user_id');
             $table->string('title');
             $table->text('text');
             $table->string('status');
             $table->string('genre');
-            $table->string('likes');
+            $table->string('likes')->nullable();
             $table->timestamp('created_at')->nullable();
          });
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateHistory2sTable extends Migration
+class CreateHistoryTextsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,10 @@ class CreateHistory2sTable extends Migration
      */
     public function up()
     {
-        Schema::create('history2s', function (Blueprint $table) {
-            $table->id();
+        Schema::create('history_texts', function (Blueprint $table) {
+         
+            $table->increments('history_id');
+            $table->string('history_text');
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ class CreateHistory2sTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('history2s');
+        Schema::dropIfExists('history_texts');
     }
 }

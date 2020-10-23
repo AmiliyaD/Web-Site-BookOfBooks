@@ -163,3 +163,19 @@ line-height: 29px;
 
 color: #000000;
 }
+.Фэнтези {
+    width: 154px;
+height: 36px;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+
+/* identical to box height */
+
+color: #521392;
+
+
+background: #CD9BFF;
+border-radius: 20px;
+}

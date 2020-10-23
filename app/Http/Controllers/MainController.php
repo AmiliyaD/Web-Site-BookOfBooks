@@ -24,7 +24,7 @@ class MainController extends Controller
         return view('auth.login');
       }
       public function getText() {
-        $user = DB::table('hisotry_text')->where('id', $_GET['id'])->get();
+        $user = DB::table('history_texts')->where('id', $_GET['id'])->get();
         $user2 = DB::table('history2')->where('id', $_GET['id'])->get();
       
 // выводим и текст и имя работы
@@ -44,4 +44,17 @@ class MainController extends Controller
 
         return view('first', ['get' => $get]);
     }
-};
+    public function rewiew_check(Request $reques) {
+      DB::table('history2')->insert(array('autor' => $reques->input('name'), 'title' => $reques->input('title'), 'text' => $reques->input('text'), 'genre' => $reques->input('genre')));
+
+    }
+    public function get_text()
+    {
+    
+      $get = DB::table('history2')->where('autor', $_GET['name'])->get();
+        return view('user-profile.home', ['get' => $get]);
+    }
+
+}
+
+

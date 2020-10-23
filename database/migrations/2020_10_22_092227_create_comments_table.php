@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class History extends Migration
+class CreateCommentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class History extends Migration
      */
     public function up()
     {
-        //
-        Schema::create('history', function (Blueprint $table) {
-           $table->string('name');
+        Schema::create('comments', function (Blueprint $table) {
+            $table->id('id');
+            $table->string('user_id');
+            $table->string('post_id');
+            $table->timestamps();
         });
     }
 
@@ -26,7 +28,6 @@ class History extends Migration
      */
     public function down()
     {
-        Schema::drop('history');
-        //
+        Schema::dropIfExists('comments');
     }
 }

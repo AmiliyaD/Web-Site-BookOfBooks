@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\Auth;
 class HomeController extends Controller
 {
     /**
@@ -21,8 +21,10 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $r)
     {
-        return view('user-profile.home');
+        $get = DB::table('history2')->where('autor', Auth::user()->name)->get();
+        return view('user-profile.home', ['get' => $get]);
+     
     }
 }

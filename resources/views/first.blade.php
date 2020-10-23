@@ -41,7 +41,7 @@
                     <span>123</span>
                 </div>
                 <div class="col-md-3">
-                <p class='work-genre work-detective text-center'>{{ $g->genre }}</p>
+                <p class='work-genre work-detective text-center {{ $g->genre }}'>{{ $g->genre }}</p>
                   
                 </div>
     
@@ -89,7 +89,7 @@
     {{-- button --}}
     <div class="row bit">
         <div class="col-md-4 text-center offset-md-4">
-         <a href="{{ route('allAutors') }}"> <button class="sds">Перейти ко всем работам</button></a>  
+         <a href="{{ route('allWorks') }}"> <button class="sds">Перейти ко всем работам</button></a>  
         </div>
     </div>
 

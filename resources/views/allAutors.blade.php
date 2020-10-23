@@ -27,7 +27,7 @@
         @foreach ($autors as $a)
         <div class="col-6 d-inline">
             <img src="{{ asset('img/av.png') }}" alt="" class="d-inline">
-            <a href=""><p>{{ $a->name }}</p></a>
+            <a href="{{ route('home', ['id'=>$a->id]) }}"><p>{{ $a->name }}</p></a>
  
             </div>
         @endforeach
