@@ -26,36 +26,35 @@
                    {{-- name --}}
    
                    
-                        <input id="name" type="text" placeholder="Name" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
+                        <input id="name" type="text" placeholder="Имя" class="form-control align-self-lg-end @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
 
                         @error('name')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>
                             </span>
                         @enderror
-                 
+                 {{-- surname --}}
+                        <input id="login" type="text" placeholder="Фамилия" class="form-control" name="surname" required autocomplete="surname">
 
+                        @error('login')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>
+                    @enderror 
               {{-- email --}}
                                           
-                            <input id="email" placeholder="Email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
+                            <input id="email" placeholder="Email (Логин)" type="email" class="form-control  @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
 
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
-                           {{-- login --}}
-{{--               
-                           <input id="login" type="text" placeholder="login" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                           @error('login')
-                           <span class="invalid-feedback" role="alert">
-                               <strong>{{ $message }}</strong>
-                           </span>
-                       @enderror --}}
+                       
+              
                 {{-- password --}}
               
-                            <input id="password" type="password" placeholder="Password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
+                            <input id="password" type="password" placeholder="Пароль" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
 
                             @error('password')
                                 <span class="invalid-feedback" role="alert">
@@ -66,18 +65,21 @@
 
                   {{-- password-confirm --}}
                        
-                            <input id="password-confirm" type="password" placeholder="Confirm password" class="form-control" name="password_confirmation" required autocomplete="new-password">
+                            <input id="password-confirm" type="password" placeholder="Подтвердить пароль" class="form-control" name="password_confirmation" required autocomplete="new-password">
                        
                     {{-- button --}}
                     <div class="form-group">
                  
                             <button type="submit" class="f-reg-button">
-                                {{ __('Register') }}
+                                {{ __('Зарегистрироваться') }}
                             </button>
                        
                     </div>
+                   
                 </form>
+               
             </div>
+            <a href="{{ route('enter') }}" class="text-center reg-a">Уже есть аккаунт? Войдите!</a>
         </div>
         </div>
     </div>

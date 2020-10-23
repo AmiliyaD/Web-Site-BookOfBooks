@@ -106,7 +106,7 @@
                         {{-- dropdown-logout --}}
                         <li class="nav-item dropdown">
                             <a href="{{ route('new_home', ['name'=>Auth::user()->name]) }}"> {{ Auth::user()->name }}
-                                {{-- {{ Auth::user()->id }} --}}
+                                {{ Auth::user()->surname }}
                                  <img src="{{ asset('img/user 1.png') }}" alt="">
                                 </a>
                         

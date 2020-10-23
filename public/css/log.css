@@ -1,0 +1,44 @@
+.form-control {
+    border: 3px solid #C4C4C4;
+    height: 50px;
+box-sizing: border-box;
+border-radius: 40px;
+margin-top: 25px;
+}
+h2 {
+    font-style: normal;
+font-weight: bold;
+font-size: 54px;
+line-height: 66px;
+
+/* identical to box height */
+
+color: #000000;
+
+
+}
+.f-log-button {
+    width: 545px;
+height: 60.83px;
+
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #FFFFFF;
+
+border:none;
+background: #FF008A;
+border-radius: 40px;
+}
+.log-a {
+    margin-left: 60px;
+    font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 29px;
+text-decoration-line: underline;
+
+color: #FF008A;
+}

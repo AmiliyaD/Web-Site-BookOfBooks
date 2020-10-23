@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 use App\Models\history2;
+use Illuminate\Support\Facades\Auth;
 class MainController extends Controller
 {
 
@@ -45,7 +46,7 @@ class MainController extends Controller
         return view('first', ['get' => $get]);
     }
     public function rewiew_check(Request $reques) {
-      DB::table('history2')->insert(array('autor' => $reques->input('name'), 'title' => $reques->input('title'), 'text' => $reques->input('text'), 'genre' => $reques->input('genre')));
+      DB::table('history2')->insert(array('autor' => $reques->input('name'), 'title' => $reques->input('title'), 'text' => $reques->input('text'), 'genre' => $reques->input('genre'), 'user_id' => $reques->input(Auth::user()->id)));
 
     }
     public function get_text()

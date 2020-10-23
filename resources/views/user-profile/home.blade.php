@@ -6,7 +6,7 @@
    
         <div class="col-md-6">
   <img src="{{ asset('img/ava.png') }}" alt="">
-        <h1 class="text-center">{{Auth::user()->name}}</h1>
+        <h1 class="text-center">{{Auth::user()->name}} {{Auth::user()->surname}}</h1>
 
         </div>
  

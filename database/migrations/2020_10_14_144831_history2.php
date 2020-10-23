@@ -19,7 +19,7 @@ class History2 extends Migration
             $table->increments('user_id');
             $table->string('title');
             $table->text('text');
-            $table->string('status');
+            $table->string('status')->nullable();
             $table->string('genre');
             $table->string('likes')->nullable();
             $table->timestamp('created_at')->nullable();
