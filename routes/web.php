@@ -24,6 +24,15 @@ Route::get('/allWorks', [MainController::class, 'allWorks'])->name('allWorks');
 Route::get('/workText', [MainController::class, 'getText'])->name('workText');
 Route::post('add/check', [MainController::class, 'rewiew_check'])->name('add/check');
 Route::get('new_home', [MainController::class, 'get_text'])->name('new_home');
+Route::get('/addText',[MainController::class, 'get_par'] )->name('addText');
+Route::get('/addPar', [MainController::class, 'add_par'])->name('addPar');
+
+Route::post('upd/check', [MainController::class, 'update'])->name('upd/check');
+Route::post('asd', [MainController::class, 'addText'])->name('asd');
+
+Route::get('/editchapter', [MainController::class, 'edit_chapter'])->name('chapter');
+
+Route::post('check', [MainController::class, 'update_pars'])->name('check');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

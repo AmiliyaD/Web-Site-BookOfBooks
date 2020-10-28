@@ -51,21 +51,23 @@
     text-decoration-line: underline;
 
     color: #FF008A;
-    margin-top: 40px;
+
 }
 
 .first-bor {
-    padding-top: 50px;
-    padding-bottom: 50px;
+
+  padding-top: 30px;
     margin-top: 100px;
     margin-bottom: 30px;
     background: #FFFFFF;
     border: 3px solid #ABABAB;
     box-sizing: border-box;
     border-radius: 50px;
+    padding-bottom: 30px;
 }
 
 .works-h2 {
+
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -157,4 +159,40 @@
     /* identical to box height */
 
     color: #1AC23F;
+}
+.Фэнтези {
+    width: 154px;
+height: 36px;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+
+/* identical to box height */
+
+color: #521392;
+
+
+background: #CD9BFF;
+border-radius: 20px;
+}
+.work-button {
+
+ padding-top: 10px;
+ padding-bottom: 10px;
+ padding-left: 40px;
+ padding-right: 40px;
+    width: 270px;
+height: 56.19px;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 27px;
+text-align: center;
+
+color: #C4C4C4;
+
+
+background: #EDEDED;
+border-radius: 50px;
 }

@@ -1,0 +1,154 @@
+/* 
+Стили для страницы редактирования главы
+editchapter.html
+22.10.2020
+*/
+
+.editchapter_form {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.edit_title {
+    margin-top: 118px;
+    font-size: 54px;
+}
+
+.editchapter_text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.editchapter_title {
+    margin-top: 35px;
+    margin-bottom: 63px;
+    text-align: center;
+}
+
+.chapter_textarea {
+    height: 1062px;
+    padding: 60px 60px;
+}
+
+.editchapter_buttons {
+    margin-top: 64px;
+    margin-bottom: 140px;
+}
+
+.editchapter_save {
+    width: 438px;
+    border: none;
+    height: 56px;
+    background: #FF008A;
+    border-radius: 50px;
+}
+
+.editchapter_delete {
+    background: #FF7575 !important;
+    width: 270px;
+height: 56px;
+border: none;
+border-radius: 50px;
+}
+
+.editchapter_delete:hover {
+
+    background: #d42828 !important;
+}
+
+.editchapter_back,
+.editchapter_delete {
+    width: 270px;
+    height: 56px;
+    border: none;
+    
+    background: #FF008A;
+    border-radius: 50px;
+  
+}
+
+.editchapter_save,
+.editchapter_back {
+    margin-right: 60px;
+}
+
+.edit-btn {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/* Responsive */
+
+/* 993 - 1200 */
+@media screen and (max-width: 1200px) {
+
+    .chapter_textarea {
+        height: calc(100vh * 0.7);
+    }
+}
+
+/* 769 - 992 */
+@media screen and (max-width: 992px) {
+    .editchapter_buttons {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .editchapter_save {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* 577 - 768 */
+@media screen and (max-width: 768px) {
+
+    .edit_title {
+        font-size: 36px;
+        margin-top: 50px;
+    }
+
+    .editchapter_title {
+        width: 100%;
+        margin: 30px 0;
+    }
+
+    .editchapter_back,
+    .editchapter_delete {
+        width: 100%;
+    }
+
+    .editchapter_back {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .editchapter_buttons {
+        margin-bottom: 70px;
+    }
+
+    .textarea_text {
+        font-size: 14px;
+    }
+
+    .chapter_textarea {
+        padding: 30px;
+        padding-right: 10px;
+    }
+}
+
+/* 0 - 576 */
+@media screen and (max-width: 576px) {
+
+    .edit_title {
+        font-size: 24px;
+    }
+
+}

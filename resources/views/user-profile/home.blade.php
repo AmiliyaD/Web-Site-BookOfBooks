@@ -1,5 +1,9 @@
+{{-- ГЛАВНЫЙ ПРОФИЛЬ ПОЛЬЗОВАТЕЛЯ --}}
 @extends('layouts.app')
 <link rel="stylesheet" href="{{ asset('css/allWorks.css') }}">
+@section('title')
+    Профиль
+@endsection
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -13,7 +17,7 @@
     </div>
     <div class="row">
         <div class="col-md-4 offset-md-5">
-            <a class="btn btn-success" href="{{ route('logout') }}" onclick="event.preventDefault();
+            <a class="work-button" href="{{ route('logout') }}" onclick="event.preventDefault();
             document.getElementById('logout-form').submit();">
 {{ __('Logout') }}
 
@@ -24,15 +28,16 @@
 
         </div>
     </div>
+    <h2>Все работы</h2>
     <div class="row">
       
-       <h2>Все работы</h2>
+  
             @foreach ($get as $g)
-            <div class="col-md-12  first-bor border">
+            <div class="col-md-10  first-bor border">
                 <div class="row first-stories">
         
                     <div class="col-md-6 offset-1">
-                    <h2 class="works-h2"><a href="{{ route('workText', ['id'=>$g->id]) }}">{{ $g->title }}</a></h2>
+                    <h2 class="works-h2"><a href="{{ route('addText', ['id'=>$g->id]) }}">{{ $g->title }}</a></h2>
         
                     </div>
                     
@@ -63,7 +68,14 @@
                         <p>{{ $g->text }}</p>
                     </div>
                 </div>
+                
+            
         
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                  <a href="{{ route('addText', ['id'=>$g->id]) }}"><img src="{{ asset('img/pencil 1.png') }}" alt=""></a> 
+                </div>
             </div>
                 @endforeach
         

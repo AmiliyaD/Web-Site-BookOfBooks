@@ -15,7 +15,7 @@
             <h1 class="f">Подари свой мир!</h1>
             <p class="hp">и может, он кому-то понравится</p>
 
-            <a href='{{ route('allAutors')}}'> <button class="sds"> Добавить работу</button></a>
+            <a href='{{ route('add')}}'> <button class="sds"> Добавить работу</button></a>
         </div>
 
     </div>

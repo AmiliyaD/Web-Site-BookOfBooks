@@ -1,0 +1,312 @@
+/* 
+Общие стили для страниц
+*/
+
+/* General 
+----------------------------------------------*/
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:focus {outline: none;}
+
+body {
+    background: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+input {
+    width: 525px;
+    padding: 15px 40px;
+    border: 3px solid #c4c4c4;
+    border-radius: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #000;
+}
+
+.textarea {
+    border: 3px solid #c4c4c4;
+    border-radius: 40px;
+    width: 100%;
+}
+
+.textarea_text {
+    border: none;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    resize: none;
+}
+
+.textarea_text::-webkit-scrollbar {
+    width: 10px
+}
+ 
+.textarea_text::-webkit-scrollbar-track {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+}
+ 
+.textarea_text::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:#fa95c7;
+}
+
+.buttons {
+    display: flex;
+}
+
+.par-btn {
+    display: block;
+    padding: 15px 0;
+    border-radius: 50px;
+    border: none;
+    background: #FF008A;
+    font-weight: 700;
+    font-size: 22px;
+    color: #fff;
+    text-align: center;
+    transition: .3s background linear;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #ff7cc3;
+}
+
+
+
+/* Header (with profile)
+----------------------------------------------*/
+
+header {
+    margin-top: 40px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    margin-right: 12px;
+}
+
+.logo_text {
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 700;
+    transition: .1s linear color;
+}
+
+.logo_text:hover {
+    color: #FF008A;
+}
+
+.profile {
+    display: flex;
+    align-items: center; 
+}
+
+.profile:hover .profile_text {
+    text-decoration: underline;
+}
+
+.profile_img {
+    margin-left: 12px;
+}
+
+.profile_text {
+    font-size: 21px;
+    color: #FF008A;
+    text-decoration: none;
+}
+
+.subnav {
+    width: 557px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subnav_link {
+    text-decoration: none;
+    color: #000;
+    transition: .1s color linear;
+}
+
+.profile_forburger {
+    display: none;
+}
+
+.subnav_link:hover {
+    color: #FF008A;
+}
+
+/* Burger
+----------------------------------------------*/
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.burger_item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+    background: #FF008A;
+    position: relative;
+}
+
+.burger_item:before,
+.burger_item:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #FF008A;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.burger_item:before {
+    top: -8px;
+}
+
+.burger_item:after{
+    bottom: -8px;
+}
+
+
+/* Footer
+----------------------------------------------*/
+
+.footer_nav {
+    padding: 52px 0;
+    background-color: #EEEEEE;
+}
+
+.footer_credits {
+    padding: 39px 0;
+    background-color: #C8C8C8; 
+    text-align: center;
+    color: #fff;
+}
+
+.footer_profile {
+    opacity: 0;
+    pointer-events: none;
+    cursor: default;
+}
+
+
+
+/* Responsive
+----------------------------------------------*/
+
+/* 993 - 1200 */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+}
+
+/* 769 - 992 */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }   
+    
+    header {
+        position: relative;
+    }
+    
+    .subnav {
+        display: none;
+        position: absolute;
+        right: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
+        top: 100%;
+        background: rgba(235, 235, 235, 0.76);
+    }
+    
+    .subnav.show {
+        display: flex;
+    }
+    
+    .profile_forburger {
+        display: block;
+    }
+    
+    .subnav_link {
+        padding: 7px 15px;
+    }
+    
+    .profile {
+        display: none;
+    }
+    
+    .burger {
+        display: block;
+    }
+}
+
+/* 577 - 768 */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+}
+
+/* 0 - 576 */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }  
+    
+    .btn {
+        font-size: 18px;
+        padding: 10px 0;
+    }
+    
+    input {
+        font-size: 14px;
+    }
+    
+    .footer_credits p {
+        font-size: 10px;
+    }
+    
+    .footer_credits {
+        padding: 20xp 0;
+    }
+    
+    .footer_nav {
+        padding: 30px 0;
+    }
+}

@@ -5,7 +5,7 @@
 <div class="container">
     <div class="row ">
         <div class="col-md-6 offset-3">
-            <img src="{{ asset('img/key.png') }}" alt="">
+            <img src="{{ asset('img/key.png') }}" class='img-fluid' alt="">
             </div>
         </div>
         <div class="row">

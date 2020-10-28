@@ -3,6 +3,8 @@
 <link rel="stylesheet" href="{{ asset('css/link.css') }}">
 <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+ 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,7 +12,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'BookOfBooks') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -122,6 +124,8 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+     
     </div>
 </body>
 

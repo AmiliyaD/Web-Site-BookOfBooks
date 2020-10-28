@@ -1,0 +1,396 @@
+/*
+Ярлыки работ (статус, жанр, рейтинг, дата)
+Используется на страницах: 
+1. Поиск (фильтр) 
+*/
+
+
+
+/* Checkboxes 
+----------------------------------*/
+
+.tag {
+    width: 143px;
+    border-radius: 25px;
+    padding: 8px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #fff;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;   
+    -khtml-user-select: none;   
+    -moz-user-select: none;      
+    -ms-user-select: none;      
+    user-select: none; 
+    transition: color .5s linear;
+    transition: background .5s linear;
+    transition: border .3s linear;
+}
+
+.check {
+    position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+/* Завершен! */
+.completed {
+    color: #1AC23F;
+    border: 1px solid #1AC23F;
+}
+
+#completed + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#completed:checked + label button {
+    font-weight: 700;
+}
+
+#completed:checked + label .completed {
+    color: #5F9656;
+    background-color: #ABF2BA;
+    border-color: #ABF2BA;
+}
+
+
+/* В процессе */
+.in_progress {
+    color: #FFA41C;
+    border: 1px solid #FFA41C;
+}
+
+#in_progress + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#in_progress:checked + label button {
+    font-weight: 700;
+}
+
+#in_progress:checked + label .in_progress {
+    color: #FFA41C;
+    background-color: #FFDFAE;
+    border-color: #FFDFAE;
+}
+
+/* Боевик */
+.boevik {
+    color: #179B5C;
+    border: 1px solid #179B5C;
+}
+
+#boevik + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#boevik:checked + label button {
+    font-weight: 700;
+}
+
+#boevik:checked + label .boevik {
+    color: #179B5C;
+    background-color: #B6E9D0;
+    border-color: #B6E9D0;
+}
+
+
+/* Детектив */
+.detective {
+    color: #7A7A7A;
+    border: 1px solid #7A7A7A;
+}
+
+#detective + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#detective:checked + label button {
+    font-weight: 700;
+}
+
+#detective:checked + label .detective {
+    color: #7A7A7A;
+    background-color: #F2F2F2;
+    border-color: #F2F2F2;
+}
+
+/* Драма */
+.drama {
+    color: #00BCD6;
+    border: 1px solid #00BCD6;
+}
+
+#drama + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#drama:checked + label button {
+    font-weight: 700;
+}
+
+#drama:checked + label .drama {
+    color: #00BCD6;
+    background-color: #BDF7FF;
+    border-color: #BDF7FF;
+}
+
+/* Приключения */
+.adventure {
+    color: #0029FF;
+    border: 1px solid #0029FF;
+}
+
+#adventure + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#adventure:checked + label button {
+    font-weight: 700;
+}
+
+#adventure:checked + label .adventure {
+    color: #0029FF;
+    background-color: #9AC3F2;
+    border-color: #9AC3F2;
+}
+
+
+/* Романтика */
+.romantic {
+    color: #FF7070;
+    border: 1px solid #FF7070;
+}
+
+#romantic + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#romantic:checked + label button {
+    font-weight: 700;
+}
+
+#romantic:checked + label .romantic {
+    color: #FF7070;
+    background-color: #FFD0DE;
+    border-color: #FFD0DE;
+}
+
+/* Ужасы */
+.horror {
+    color: #FF2C2C;
+    border: 1px solid #FF2C2C;
+}
+
+#horror + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#horror:checked + label button {
+    font-weight: 700;
+}
+
+#horror:checked + label .horror {
+    color: #fff;
+    background-color: #FF2C2C;
+    border-color: #FF2C2C;
+}
+
+/* Фэнтэзи */
+.fantasy {
+    color: #521392;
+    border: 1px solid #521392;
+}
+
+#fantasy + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#fantasy:checked + label button {
+    font-weight: 700;
+}
+
+#fantasy:checked + label .fantasy {
+    color: #521392;
+    background-color: #CD9BFF;
+    border-color: #CD9BFF;
+}
+
+/* Юмор */
+.humor {
+    color: #DFD261;
+    border: 1px solid #DFD261;
+}
+
+#humor + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#humor:checked + label button {
+    font-weight: 700;
+}
+
+#humor:checked + label .humor {
+    color: #FF9900;
+    background-color: #FFF387;
+    border-color: #FFF387;
+}
+
+
+
+/* Рейтинг */
+.popular {
+    width: 270px;
+    color: #818181;
+    border: 1px solid #818181;
+}
+
+#popular_more + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#popular_more:checked + label button {
+    font-weight: 700;
+}
+
+#popular_more:checked + label .popular {
+    color: #fff;
+    background-color: #BEBEBE;
+    border-color: #BEBEBE;
+}
+
+#popular_less + label .tag {
+    position: relative;
+    z-index: -1;
+}
+
+#popular_less:checked + label button {
+    font-weight: 700;
+}
+
+#popular_less:checked + label .popular {
+    color: #fff;
+    background-color: #BEBEBE;
+    border-color: #BEBEBE;
+}
+
+/* Дата */ 
+
+.date {
+    width: 188px;
+    border: 1px solid #C4C4C4;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #C4C4C4;
+    text-align: center;
+    padding: 8px 0; 
+    
+}
+
+
+/* Ярлыки (некликабельные)
+----------------------------------*/
+
+.work_genre {
+    display: block;
+    width: 157px;
+    padding: 9px 0;
+    border: 1px solid;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700; 
+}
+
+.work_boevik {
+    color: #179B5C;
+    background: #B6E9D0;
+    border-color: #B6E9D0;
+}
+
+.work_detective {
+    color: #7A7A7A;
+    background: #F2F2F2;
+    border-color: #F2F2F2;
+}
+
+.work_drama {
+    color: #00BCD6;
+    background: #BDF7FF;
+    border-color: #BDF7FF;
+}
+
+.work_adventure {
+    color: #0029FF;
+    background: #9AC3F2;
+    border-color: #9AC3F2;
+}
+
+.work_romantic {
+    color: #FF7070;
+    background: #FFD0DE;
+    border-color: #FFD0DE;
+}
+
+.work_horror {
+    color: #fff;
+    background: #FF2C2C;
+    border-color: #FF2C2C;
+}
+
+.work_fantasy {
+    color: #521392;
+    background: #CD9BFF;
+    border-color: #CD9BFF;
+}
+
+.work_humor {
+    color: #FF9900;
+    background: #FFF387;
+    border-color: #FFF387;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
