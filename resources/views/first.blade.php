@@ -1,5 +1,6 @@
 
 <link rel="stylesheet" href="{{ asset('css/new2.css') }}">
+<link rel="stylesheet" href="{{ asset('css/tags.css') }}">
 @extends('main.main')
 
 @section('title')
@@ -41,7 +42,7 @@
                     <span>123</span>
                 </div>
                 <div class="col-md-3">
-                <p class='work-genre work-detective text-center {{ $g->genre }}'>{{ $g->genre }}</p>
+                <p id="{{$g->genre}}" class='work-genre work-detective text-center {{ $g->genre }}'>{{ $g->genre }}</p>
                   
                 </div>
     

@@ -1,5 +1,8 @@
 @extends('main.main')
 @section('main-block')
+@section('title')
+    Добавить работу
+@endsection
 <link rel="stylesheet" href="{{ asset('css/addWorks.css') }}">
 @if (Auth::check())
 <div class="row">

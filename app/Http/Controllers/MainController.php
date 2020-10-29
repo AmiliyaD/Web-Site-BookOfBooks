@@ -25,19 +25,31 @@ class MainController extends Controller
     public function enter() {
         return view('auth.login');
       }
+       //ПРОСМОТР РАБОТ
+       // выводим и текст и имя работы
       public function getText() {
-        $user = DB::table('history_texts')->where('id', $_GET['id'])->get();
+        $user = DB::table('history_par')->where('id_h', $_GET['id'])->get();
         $user2 = DB::table('history2')->where('id', $_GET['id'])->get();
-      
-// выводим и текст и имя работы
+     
+
         return view('workText', ['text' => $user,
-                                'text2' => $user2
-        ]);
+                                 'text2' => $user2]);
+      }
+      //просмотр глав
+      public function getPar()
+      {
+        $par_text = DB::table('history2')->where('id', $_GET['id_h'])->get();
+        $par = DB::table('history_par')->where('id', $_GET['id'])->get();
+
+        return view('parText', ['par_text' => $par_text,
+                                'par' => $par ]);
+  
       }
 
+      //   выводим основную инфу о работах
       public function allWorks() {
           $get = DB::select('select * from history2');
-        //   выводим основную инфу о работах
+
           return view('allWorks', ['get' =>$get]);
       }
   
@@ -87,11 +99,11 @@ class MainController extends Controller
     DB::table('history_par')->insert(array('id_h'=> $_GET['id'], 'name'=>$r->input('add-name'), 'history_text' => $r->input('add-text')));
 echo 'глава добавлена';
 dd($get);
-
+}
 // ГЛАВЫ
 
 //редактирование главы
-    }
+ 
     public function edit_chapter() {
       $chapter = DB::table('history_par')->where('id', $_GET['id'])->get();
       return view('user-profile.editchapter', ['chapter' => $chapter]);
@@ -102,7 +114,10 @@ dd($get);
       echo 'изменения сохранены';
       DB::table('history_par')->where('id', $_GET['chapter_id'])->update(array('name' => $r->input('chapter_name'), 'history_text' => $r->input('chapter_text')));
     }
+
  
+
+    
 }
 
 

@@ -1,0 +1,17 @@
+.par-p {
+    font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 44px;
+
+/* identical to box height */
+
+color: #000000;
+}
+.par-btn {
+    width: 370px;
+height: 56px;
+
+background: #FF008A;
+border-radius: 50px;
+}

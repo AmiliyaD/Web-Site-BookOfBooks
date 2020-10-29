@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{ asset('css/allWorks.css') }}">
+<link rel="stylesheet" href="{{ asset('css/tags.css') }}">
 @extends('main.main')
 @section('title')
 Все работы
